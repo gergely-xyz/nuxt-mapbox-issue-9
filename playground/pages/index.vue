@@ -1,6 +1,6 @@
 <template>
   <div>
-    <NuxtLink to="/other"> Click here to go to other page </NuxtLink>
+    <NuxtLink to="/other"> Click here to go to another page </NuxtLink>
     <MapboxMap
       map-id="map2"
       style="top: 80px"
