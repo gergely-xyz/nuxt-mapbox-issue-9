@@ -1,0 +1,77 @@
+{
+  "name": "nuxt-mapbox",
+  "version": "1.2.2",
+  "description": "Elegant Mapbox GL JS integration with Nuxt",
+  "author": {
+    "name": "Alex Lavoie",
+    "url": "https://github.com/AlexLavoie42"
+  },
+  "homepage": "https://github.com/AlexLavoie42/Nuxt-Mapbox",
+  "bugs": {
+    "url": "https://github.com/AlexLavoie42/Nuxt-Mapbox/issues/new"
+  },
+  "license": "MIT",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/types.d.ts",
+      "import": "./dist/module.mjs",
+      "require": "./dist/module.cjs"
+    }
+  },
+  "main": "./dist/module.cjs",
+  "types": "./dist/types.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "nuxt-module-build",
+    "dev": "nuxi dev playground",
+    "dev:build": "nuxi build playground",
+    "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
+    "release": "npm run lint && npm run test && npm run prepack && changelogen --release && npm publish && git push --follow-tags",
+    "lint": "eslint .",
+    "test": "vitest run",
+    "test:watch": "vitest watch"
+  },
+  "dependencies": {
+    "@mapbox/mapbox-gl-geocoder": "^5.0.1",
+    "@nuxt/kit": "^3.2.0",
+    "@types/mapbox-gl": "^2.7.10",
+    "@types/mapbox__mapbox-gl-geocoder": "^4.7.3",
+    "mapbox-gl": "^2.12.1"
+  },
+  "devDependencies": {
+    "@nuxt/eslint-config": "^0.1.1",
+    "@nuxt/module-builder": "^0.2.1",
+    "@nuxt/schema": "^3.2.0",
+    "@nuxt/test-utils": "^3.2.0",
+    "changelogen": "^0.4.1",
+    "eslint": "^8.34.0",
+    "nuxt": "^3.2.0",
+    "vitest": "^0.28.5"
+  },
+  "keywords": [
+    "mapbox",
+    "mapbox gl js",
+    "mapbox gl",
+    "map",
+    "nuxt",
+    "nuxt3",
+    "nuxt 3",
+    "vue",
+    "vue 3",
+    "mapbox nuxt 3",
+    "mapbox nuxt",
+    "mapbox vue",
+    "mapbox vue 3",
+    "geocode",
+    "geocoder",
+    "geocoding",
+    "geolocate",
+    "geolocater",
+    "geolocating",
+    "GIS",
+    "geojson"
+  ]
+}
